@@ -1150,40 +1150,20 @@ footer {
     align-items: center;
 }
 /* Container for the slider */
+/* Container for the slider */
 .slider-container {
-    max-width: 600px; /* Adjust this to match your testimonial width */
-    margin: 0 auto;
-    overflow: hidden; /* This hides the images that are not currently in view */
-    position: relative;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+    overflow: hidden !important;
+    position: relative !important;
 }
 
 /* The track that holds all images */
 .slider-track {
-    display: flex;
-    transition: transform 0.5s ease-in-out; /* This makes the movement smooth */
-    width: 100%;
-}
-
-/* Ensure each image takes up the full width of the container */
-.testimonial-slide {
-    flex: 0 0 100%; /* Ensures each image takes up exactly the container width */
-    width: 100%;    /* Forces image to match the container width */
-    height: 500px;  /* Set a fixed height for all slides */
-    object-fit: cover; /* Crops images to fill the box without distortion */
-    display: block;
-}
-/* Force the slider elements to ignore global absolute positioning */
-.slider-container, 
-.slider-track, 
-.testimonial-slide {
-    position: relative !important;
-}
-
-/* Ensure the track uses flex to line images up horizontally */
-.slider-track {
     display: flex !important;
     transition: transform 0.5s ease-in-out !important;
     width: 100% !important;
+    position: relative !important;
 }
 
 /* Ensure images take up full width and stop overlapping */
@@ -1191,7 +1171,8 @@ footer {
     flex: 0 0 100% !important;
     width: 100% !important;
     height: 500px !important;
-    object-fit: contain !important; /* Change to 'cover' if you prefer no empty space */
+    object-fit: contain !important; 
     display: block !important;
-    float: none !important; /* Ensure no float is accidentally applied */
+    float: none !important;
+    position: relative !important;
 }
