@@ -1183,30 +1183,22 @@ footer {
 </div>
 
 .prev-btn, .next-btn {
-    background-color: rgba(45, 104, 196, 0.8) !important; /* Uses your brand blue */
-    color: white !important;
-    border: none !important;
-    padding: 10px 15px !important;
-    cursor: pointer !important;
-    border-radius: 5px !important;
-    font-size: 18px !important;
-    transform: translateY(-50%) !important; /* Keeps them perfectly vertically centered */
-}
-.prev-btn, .next-btn {
     position: absolute !important;
     top: 50% !important;
     transform: translateY(-50%) !important;
-    z-index: 100 !important; /* High number forces them to the front */
+    z-index: 100 !important;
     background-color: rgba(45, 104, 196, 0.8) !important;
     color: white !important;
     border: none !important;
     padding: 10px 15px !important;
     cursor: pointer !important;
     border-radius: 5px !important;
+    font-size: 18px !important;
 }
 
 .prev-btn { left: 10px !important; }
 .next-btn { right: 10px !important; }
+
 .prev-btn:hover, .next-btn:hover {
-    background-color: var(--brand-blue) !important;
+    background-color: rgba(45, 104, 196, 1) !important;
 }
