@@ -1149,3 +1149,25 @@ footer {
 .placeholder-card .teacher-info-content {
     align-items: center;
 }
+/* Container for the slider */
+.slider-container {
+    max-width: 600px; /* Adjust this to match your testimonial width */
+    margin: 0 auto;
+    overflow: hidden; /* This hides the images that are not currently in view */
+    position: relative;
+}
+
+/* The track that holds all images */
+.slider-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out; /* This makes the movement smooth */
+    width: 100%;
+}
+
+/* Ensure each image takes up the full width of the container */
+.testimonial-slide {
+    flex: 0 0 100%; /* Ensures each image is exactly 100% of the slider container */
+    width: 100%;
+    object-fit: contain;
+    display: block;
+}
