@@ -999,6 +999,9 @@ footer {
     transition: var(--transition-smooth);
     display: flex;
     flex-direction: column;
+    
+    /* Add this line to force 3 per row */
+    flex: 0 0 32%; 
 }
 
 .teacher-card:hover {
