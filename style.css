@@ -1181,3 +1181,18 @@ footer {
     <button class="prev-btn" style="position: absolute; top: 50%; left: 10px; z-index: 10;">&#10094;</button>
     <button class="next-btn" style="position: absolute; top: 50%; right: 10px; z-index: 10;">&#10095;</button>
 </div>
+
+.prev-btn, .next-btn {
+    background-color: rgba(45, 104, 196, 0.8) !important; /* Uses your brand blue */
+    color: white !important;
+    border: none !important;
+    padding: 10px 15px !important;
+    cursor: pointer !important;
+    border-radius: 5px !important;
+    font-size: 18px !important;
+    transform: translateY(-50%) !important; /* Keeps them perfectly vertically centered */
+}
+
+.prev-btn:hover, .next-btn:hover {
+    background-color: var(--brand-blue) !important;
+}
