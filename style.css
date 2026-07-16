@@ -1158,22 +1158,17 @@ footer {
     position: relative !important; /* This is the ONLY safe absolute-related rule */
 }
 
-/* Force the track to be a flex container */
+/* Force the track and slides to be in the normal flow */
 .slider-track {
     display: flex !important;
-    flex-direction: row !important;
-    transition: transform 0.5s ease-in-out !important;
     width: 100% !important;
     position: relative !important;
 }
 
-/* Force every image out of any absolute positioning */
 .testimonial-slide {
-    flex: 0 0 100% !important;
+    flex: 0 0 100% !important; /* Forces each image to 100% width of container */
     width: 100% !important;
-    height: 500px !important;
-    object-fit: contain !important;
     display: block !important;
-    position: relative !important; /* Overrides any global 'absolute' */
-    float: none !important;        /* Prevents floating issues */
+    position: relative !important; /* Overrides conflicting 'absolute' rules */
+    float: none !important;
 }
