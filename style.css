@@ -1150,29 +1150,30 @@ footer {
     align-items: center;
 }
 /* Container for the slider */
-/* Container for the slider */
+/* Force the container to hold the track in the normal document flow */
 .slider-container {
     max-width: 600px !important;
     margin: 0 auto !important;
     overflow: hidden !important;
-    position: relative !important;
+    position: relative !important; /* This is the ONLY safe absolute-related rule */
 }
 
-/* The track that holds all images */
+/* Force the track to be a flex container */
 .slider-track {
     display: flex !important;
+    flex-direction: row !important;
     transition: transform 0.5s ease-in-out !important;
     width: 100% !important;
     position: relative !important;
 }
 
-/* Ensure images take up full width and stop overlapping */
+/* Force every image out of any absolute positioning */
 .testimonial-slide {
     flex: 0 0 100% !important;
     width: 100% !important;
     height: 500px !important;
-    object-fit: contain !important; 
+    object-fit: contain !important;
     display: block !important;
-    float: none !important;
-    position: relative !important;
+    position: relative !important; /* Overrides any global 'absolute' */
+    float: none !important;        /* Prevents floating issues */
 }
