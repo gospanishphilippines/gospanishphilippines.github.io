@@ -1159,6 +1159,9 @@ footer {
     margin: 0 auto !important;
     overflow: hidden !important;
     position: relative !important; /* This is the ONLY safe absolute-related rule */
+    display: flex !important;
+    align-items: center !important; /* This helps center things vertically */
+    min-height: 400px !important;   /* Adjust this to match your image heights */
 }
 
 /* Force the track and slides to be in the normal flow */
