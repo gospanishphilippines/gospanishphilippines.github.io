@@ -1172,3 +1172,26 @@ footer {
     object-fit: cover; /* Crops images to fill the box without distortion */
     display: block;
 }
+/* Force the slider elements to ignore global absolute positioning */
+.slider-container, 
+.slider-track, 
+.testimonial-slide {
+    position: relative !important;
+}
+
+/* Ensure the track uses flex to line images up horizontally */
+.slider-track {
+    display: flex !important;
+    transition: transform 0.5s ease-in-out !important;
+    width: 100% !important;
+}
+
+/* Ensure images take up full width and stop overlapping */
+.testimonial-slide {
+    flex: 0 0 100% !important;
+    width: 100% !important;
+    height: 500px !important;
+    object-fit: contain !important; /* Change to 'cover' if you prefer no empty space */
+    display: block !important;
+    float: none !important; /* Ensure no float is accidentally applied */
+}
