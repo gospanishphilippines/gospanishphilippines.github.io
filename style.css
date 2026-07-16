@@ -1166,11 +1166,11 @@ footer {
 }
 
 .testimonial-slide {
-    flex: 0 0 100% !important; /* Forces each image to 100% width of container */
+    flex: 0 0 100% !important;
     width: 100% !important;
     display: block !important;
-    position: relative !important; /* Overrides conflicting 'absolute' rules */
-    float: none !important;
+    position: relative !important;
+    object-fit: contain !important; /* This prevents the cropping */
 }
 <div class="slider-container" style="max-width: 600px; margin: 0 auto; overflow: hidden; position: relative;">
     <div class="slider-track" style="display: flex;">
@@ -1201,11 +1201,4 @@ footer {
 
 .prev-btn:hover, .next-btn:hover {
     background-color: rgba(45, 104, 196, 1) !important;
-}
-.testimonial-slide {
-    flex: 0 0 100% !important;
-    width: 100% !important;
-    display: block !important;
-    position: relative !important;
-    object-fit: contain !important; /* This prevents the cropping */
 }
