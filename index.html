@@ -1,3 +1,35 @@
+<head>
+    <!-- Your other links and meta tags go here -->
+    
+    <style>
+        .slider-container {
+            width: 100%;
+            overflow: hidden; /* Hides images outside the view */
+            background: #ffffff;
+            padding: 20px 0;
+        }
+
+        .slider-track {
+            display: flex; /* Lines images up horizontally */
+            animation: scroll 40s linear infinite; /* Makes them move */
+            width: max-content;
+        }
+
+        .slider-track img {
+            width: 300px; /* Adjust image width here */
+            height: auto; /* Prevents cropping */
+            object-fit: contain; /* Keeps the whole image visible */
+            margin-right: 20px; /* Space between images */
+            flex-shrink: 0;
+        }
+
+        @keyframes scroll {
+            0% { transform: translateX(0); }
+            100% { transform: translateX(-50%); }
+        }
+    </style>
+</head>
+
 <link rel="stylesheet" href="style.css">
 
 <!DOCTYPE html>
