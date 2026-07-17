@@ -226,12 +226,13 @@ section {
 .hero-tagline {
     display: inline-block;
     font-family: var(--font-heading);
-    font-size: 0.95rem;
-    font-weight: 700;
+    font-size: 1.2rem;
+    font-weight: 800;
     text-transform: uppercase;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     color: var(--brand-yellow);
-    margin-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
 }
 
 .hero h1.hero-title {
