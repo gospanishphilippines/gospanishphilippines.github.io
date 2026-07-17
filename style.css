@@ -381,9 +381,10 @@ section {
 }
 
 .feature-icon {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     margin-bottom: 1.5rem;
     color: var(--brand-blue);
+    display: inline-block;
 }
 
 .feature-card h3 {
