@@ -21,6 +21,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+   max-width: 100%;
 }
 
 html {
@@ -129,6 +130,7 @@ section {
 }
 
 .nav-container {
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     display: flex;
@@ -359,6 +361,7 @@ section {
 }
 
 .features-grid {
+    width: 90%;
     max-width: 1200px;
     margin: 0 auto;
     display: grid;
@@ -810,7 +813,8 @@ footer {
    14. Custom 5-Level Curriculum Styles
    ========================================================================== */
 .curriculum-container {
-    max-width: 800px;
+    width: 90%;
+    max-width: 1200px;
     margin: 0 auto 4rem auto;
     display: flex;
     flex-direction: column;
@@ -978,6 +982,7 @@ footer {
     /* Forces exactly 3 columns on desktop, wraps beautifully on tablets/mobile */
     grid-template-columns: repeat(3, 1fr); 
     gap: 2.5rem;
+    width: 90%;
     max-width: 1200px; /* Widened slightly to give 3 cards plenty of breathing room */
     margin: 0 auto;
     padding: 0 2rem;
@@ -1202,4 +1207,23 @@ footer {
 
 .prev-btn:hover, .next-btn:hover {
     background-color: rgba(45, 104, 196, 1) !important;
+}
+
+/* --- Founder Section Responsive Container --- */
+.founder-container {
+    max-width: 1200px;
+    width: 90%; /* Makes it fluid on mobile */
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.1fr; /* 2 columns on desktop */
+    gap: 4rem;
+    align-items: start;
+}
+
+/* This is the rule that fixes the mobile breakage */
+@media (max-width: 968px) {
+    .founder-container {
+        grid-template-columns: 1fr !important; /* Stack vertically on tablets/phones */
+        gap: 2rem !important;
+    }
 }
